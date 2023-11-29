@@ -43,17 +43,17 @@
                     </svg>
               </button>
               <ul id="dropdown-example1" class="hidden py-2 space-y-2">
+                    <!-- <li>
+                       <a href="{{ route('departemen.rekapirs') }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Rekap IRS</a>
+                    </li>-->
                     <li>
-                       <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">IRS</a>
+                       <a href="{{ route('departemen.rekapstatus') }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Rekap Status</a>
                     </li>
                     <li>
-                       <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">KHS</a>
+                       <a href="{{ route('departemen.rekappkl') }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Rekap PKL</a>
                     </li>
                     <li>
-                       <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">PKL</a>
-                    </li>
-                    <li>
-                       <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Skripsi</a>
+                       <a href="{{ route('departemen.rekapskripsi') }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Rekap Skripsi</a>
                     </li>
               </ul>
            </li>

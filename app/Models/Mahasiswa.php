@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class Mahasiswa extends Model
 {
@@ -15,7 +16,7 @@ class Mahasiswa extends Model
 
     protected $fillable = [
         'id_mhs',
-        'NIM',
+        'nim',
         'fakultas',
         'nama',
         'email',
@@ -28,6 +29,11 @@ class Mahasiswa extends Model
         'kode_kota_kab',
         'nama_doswal',
         'persetujuan'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'email', 'email');
+    }
 
     public static function rules()
     {
@@ -62,4 +68,25 @@ class Mahasiswa extends Model
         ];
     }
 
+    public function irs()
+    {
+        return $this->hasOne(IRS::class, 'NIM', 'NIM');
+    }
+
+    public function khs()
+    {
+        return $this->hasOne(KHS::class, 'NIM', 'NIM');
+    }
+
+    public function pkl()
+    {
+        return $this->hasOne(PKL::class, 'NIM', 'NIM');
+    }
+
+    public function skripsi()
+    {
+        return $this->hasOne(Skripsi::class, 'NIM', 'NIM');
+    }
+
+    use Notifiable;
 }

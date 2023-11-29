@@ -45,16 +45,16 @@
              </button>
              <ul id="dropdown-example1" class="hidden py-2 space-y-2">
                    <li>
-                      <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data IRS</a>
+                      <a href="{{ route('mahasiswa.irs', ['id_mhs' => $mahasiswa->id_mhs]) }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data IRS</a>
                    </li>
                    <li>
-                      <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data KHS</a>
+                      <a href="{{ route('mahasiswa.khs', ['id_mhs' => $mahasiswa->id_mhs]) }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data KHS</a>
                    </li>
                    <li>
-                      <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data PKL</a>
+                      <a href="{{ route('mahasiswa.pkl', ['id_mhs' => $mahasiswa->id_mhs]) }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data PKL</a>
                    </li>
                    <li>
-                      <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data Skripsi</a>
+                      <a href="{{ route('mahasiswa.skripsi', ['id_mhs' => $mahasiswa->id_mhs]) }}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Entry Data Skripsi</a>
                    </li>
              </ul>
           </li>
